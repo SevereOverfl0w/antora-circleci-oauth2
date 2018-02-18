@@ -1,0 +1,21 @@
+= Antora with oAuth2
+
+Example setup of antora with oauth2 protection.
+
+Uses:
+
+* Heroku
+* link:https://github.com/bitly/oauth2_proxy/[oauth2_proxy]
+
+== Replicating this
+
+. Create a project on heroku
+. `heroku git:remote -a antora-private` (replacing antora-private with your name)
+. Set buildpacks like:
++
+----
+=== antora-private Buildpack URLs
+1. heroku/nodejs
+2. https://github.com/peterkeen/heroku-buildpack-vendorbinaries.git
+----
+. `git push heroku master`
