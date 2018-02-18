@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@antora/cli": "^1.0.0-alpha.6",
+    "@antora/site-generator-default": "^1.0.0-alpha.6"
+  }
+}
